@@ -27,15 +27,17 @@ export default function Footer() {
               effect="solid"
               textColor="#e2e8f0"
             />
-            <NextLink
+            <a
               href={process.env.NEXT_PUBLIC_SITE_URL}
-              aria-label="Home"
-              data-tip="Home"
+              aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Twitter`}
+              rel="noopener noreferrer"
+              target="_blank"
+              data-tip="Twitter"
               data-for="footer"
               className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
             >
               <FaHome />
-            </NextLink>
+            </a>
             <a
               href={process.env.NEXT_PUBLIC_TWITTER_URL}
               aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Twitter`}
