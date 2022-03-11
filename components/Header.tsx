@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
-import { FaTwitter, FaDiscord, FaShip } from 'react-icons/fa';
+import { FaTwitter, FaMedium, FaShip } from 'react-icons/fa';
 
 import Blockies from './Blockies';
 import ConnectButton from './ConnectButton';
@@ -94,15 +94,15 @@ export default function Header() {
                 <FaTwitter />
               </a>
               <a
-                href={process.env.NEXT_PUBLIC_DISCORD_URL}
-                aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Discord`}
+                href={process.env.NEXT_PUBLIC_MEDIUM_URL}
+                aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Medium`}
                 rel="noopener noreferrer"
                 target="_blank"
                 data-tip="Discord"
                 data-for="header"
                 className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
               >
-                <FaDiscord />
+                <FaMedium />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_OPENSEA_URL}

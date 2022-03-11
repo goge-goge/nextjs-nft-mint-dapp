@@ -40,6 +40,7 @@ export default function Minting() {
           value: totalCostWei,
           gasLimit: totalGasLimit.toString(),
         });
+        // const transaction = await contract.withdraw();
         setIsPending(false);
         setIsMinting(true);
         await transaction.wait();
@@ -52,6 +53,8 @@ export default function Minting() {
             6
           )}...${account.substring(account.length - 4)}`
         );
+        const totalSupply = await contract.getTokensMinted();
+        setTotalSupply(totalSupply.toString());
       } catch (error) {
         setIsPending(false);
       }
@@ -65,7 +68,7 @@ export default function Minting() {
   }
 
   function incrementMintAmount() {
-    if (mintAmount < 10) {
+    if (mintAmount < 2) {
       setMintAmount(mintAmount + 1);
     }
   }
@@ -114,7 +117,7 @@ export default function Minting() {
                 <button
                   type="button"
                   className={
-                    mintAmount === 10 ? 'text-gray-500 cursor-default' : ''
+                    mintAmount === 2 ? 'text-gray-500 cursor-default' : ''
                   }
                   onClick={incrementMintAmount}
                   disabled={false}
@@ -188,7 +191,7 @@ export default function Minting() {
           <div className="space-y-4">
             <p>
               Please make sure you are connected to the correct address and the
-              correct network (Polygon Mainnet) before purchasing. The operation
+              correct network (Ethereum Mainnet) before purchasing. The operation
               cannot be undone after purchase.
             </p>
             <p>

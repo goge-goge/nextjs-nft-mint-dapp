@@ -21,7 +21,7 @@ export default function Team() {
           className="text-blue-400"
         >
           <span className="border-2 border-gray-700 hover:border-gray-600 rounded-full px-4 py-2 bg-gray-900">
-            @kjmczk
+            @NftflowStarkNet
           </span>
         </a>
       </p>
