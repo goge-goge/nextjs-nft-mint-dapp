@@ -5,17 +5,17 @@ import Creator from '../public/assets/creator.png';
 export default function Team() {
   return (
     <div className="text-center">
-      <h2 className="text-2xl text-gray-100 mb-4">Creator & Developer</h2>
+      <h2 className="text-2xl text-gray-100 mb-4">NFTflow Membership Pass</h2>
       <Image
         src={Creator}
-        alt="Koji Mochizuki"
+        alt="NFTflow Membership Pass"
         width={200}
         height={200}
         className="rounded-full"
       />
       <p className="mt-4">
         <a
-          href="https://twitter.com/kjmczk"
+          href="https://twitter.com/NftflowStarkNet"
           rel="noopener noreferrer"
           target="_blank"
           className="text-blue-400"

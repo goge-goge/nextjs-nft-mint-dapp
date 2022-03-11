@@ -28,7 +28,7 @@ export default function Footer() {
               textColor="#e2e8f0"
             />
             <NextLink
-              href="/"
+              href={process.env.NEXT_PUBLIC_SITE_URL}
               aria-label="Home"
               data-tip="Home"
               data-for="footer"

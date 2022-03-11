@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'fredoka': ['Fredoka', 'sans-serif'],
+        'syne-mono': ['Syne Mono', 'monospace'],
       },
     },
   },

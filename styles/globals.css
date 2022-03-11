@@ -7,5 +7,21 @@
   h2,
   h3 {
     @apply text-blue-500;
+    @apply font-syne-mono;
+  },
+  p {
+    @apply font-fredoka;
+  },
+  span {
+    @apply font-fredoka;
+  }
+}
+
+@layer components {
+  p {
+    @apply font-fredoka;
+  },
+  span {
+    @apply font-fredoka;
   }
 }

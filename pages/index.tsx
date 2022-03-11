@@ -30,6 +30,12 @@ const Home: NextPage = () => {
         </Prose>
       </div>
 
+      <div className="bg-gray-800 py-8">
+        <Prose>
+          <Team />
+        </Prose>
+      </div>
+
       <div className="py-8">
         <Prose>
           <Minting />
@@ -38,21 +44,10 @@ const Home: NextPage = () => {
 
       <div className="bg-gray-800 py-8">
         <Prose>
-          <Faq />
-        </Prose>
-      </div>
-
-      <div className="py-8">
-        <Prose>
           <Roadmap />
         </Prose>
       </div>
 
-      <div className="bg-gray-800 py-8">
-        <Prose>
-          <Team />
-        </Prose>
-      </div>
     </Layout>
   );
 };

@@ -4,7 +4,7 @@ export default function Faq() {
       <h2 className="text-4xl mb-4">FAQ</h2>
       <div className="space-y-4">
         <div>
-          <h3 className="text-2xl mb-2">What is the use of the NFTflow Membership Pass</h3>
+          <h3 className="text-2xl mb-2">What is the use of the NFTflow Membership Pass?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
