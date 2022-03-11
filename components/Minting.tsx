@@ -36,7 +36,7 @@ export default function Minting() {
           ABI,
           signer
         );
-        const transaction = await contract.mint(mintAmount, {
+        const transaction = await contract.mint2(mintAmount, {
           value: totalCostWei,
           gasLimit: totalGasLimit.toString(),
         });
@@ -78,7 +78,7 @@ export default function Minting() {
         ABI,
         provider
       );
-      const totalSupply = await contract.totalSupply();
+      const totalSupply = await contract.getTokensMinted();
       setTotalSupply(totalSupply.toString());
     }
     fetchTotalSupply();
