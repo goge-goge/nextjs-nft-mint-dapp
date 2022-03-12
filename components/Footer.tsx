@@ -29,10 +29,10 @@ export default function Footer() {
             />
             <a
               href={process.env.NEXT_PUBLIC_SITE_URL}
-              aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Twitter`}
+              aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on Home`}
               rel="noopener noreferrer"
               target="_blank"
-              data-tip="Twitter"
+              data-tip="Home"
               data-for="footer"
               className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
             >

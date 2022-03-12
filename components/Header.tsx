@@ -44,7 +44,7 @@ export default function Header() {
         chainId.toString() !== process.env.NEXT_PUBLIC_NETWORK_ID
       ) {
         setErrMsg(
-          `Change the network to ${process.env.NEXT_PUBLIC_NETWORK_ID}.`
+          `Change the network to ${process.env.NEXT_PUBLIC_NETWORK_NAME}.`
         );
       } else {
         setErrMsg('');
@@ -124,7 +124,7 @@ export default function Header() {
                       className="rounded-full"
                     />
                   </span>
-                  <span>
+                  <span className='font-fredoka'>
                     {`${account.substring(0, 6)}...${account.substring(
                       account.length - 4
                     )}`}

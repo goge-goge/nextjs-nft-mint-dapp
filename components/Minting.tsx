@@ -192,7 +192,7 @@ export default function Minting() {
             <p>
               Please make sure you are connected to the correct address and the
               correct network (Ethereum Mainnet) before purchasing. The operation
-              cannot be undone after purchase.Buy up to two per wallet.
+              cannot be undone after purchase.Buy up to 2 per wallet.
             </p>
             <p>
               We have set the gas limit to 285000 to successfully mint your NFT.
