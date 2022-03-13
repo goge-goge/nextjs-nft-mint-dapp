@@ -99,7 +99,7 @@ export default function Minting() {
             </div>
             <div className="text-center">
               <p className="text-xl">{`${process.env.NEXT_PUBLIC_DISPLAY_COST} ${process.env.NEXT_PUBLIC_CHAIN} per 1 NFT`}</p>
-              <p>(excluding gas fees)</p>
+              <p>(buy up to 2 per wallet)</p>
             </div>
             <div className="flex justify-center items-center space-x-4">
               <IconContext.Provider value={{ size: '1.5em' }}>
@@ -192,7 +192,7 @@ export default function Minting() {
             <p>
               Please make sure you are connected to the correct address and the
               correct network (Ethereum Mainnet) before purchasing. The operation
-              cannot be undone after purchase.Buy up to 2 per wallet.
+              cannot be undone after purchase.
             </p>
             <p>
               We have set the gas limit to 285000 to successfully mint your NFT.
